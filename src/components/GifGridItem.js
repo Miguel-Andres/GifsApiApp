@@ -1,4 +1,6 @@
-import React from 'react'
+import PropTypes from "prop-types"
+
+
 
 export default function GifGridItem({title,url}) {
   return (
@@ -10,3 +12,19 @@ export default function GifGridItem({title,url}) {
     </>
   )
 }
+
+
+GifGridItem.propTypes= {
+
+  title : PropTypes.string.isRequired ,
+  url : PropTypes.string.isRequired
+}
+
+/*
+1-enzyme
+2-enzyme to json 
+3. debe de mostrar el componente correctamete
+
+*
+*/
+
